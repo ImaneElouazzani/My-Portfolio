@@ -23,6 +23,7 @@ body {
     top: 0;
     left: 0;
     z-index: 5;
+    transition: all 0.2s ease-in-out;
 }
 
 .blocs-menu {
@@ -106,6 +107,24 @@ body {
 
 @media screen and (max-width: 1300px) {
     .nav-gauche {
+        left: -300px!important;
+        width: 250px;
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-visible {
+        left: 0px!important;
+    }
+
+    .blocs-menu:nth-child(1){
+        display: none;
+    }
+
+    .blocs-menu:nth-child(7){
         display: none;
     }
 
