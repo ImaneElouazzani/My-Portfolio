@@ -16,3 +16,26 @@ if(window.matchMedia('(max-width: 1300px)')) {
         })
     })
 }
+
+// Animation écriture
+
+const txtAnim = document.querySelector('.txt-animation')
+
+let typewriter = new Typewriter(txtAnim, {
+    loop: false,
+    deleteSpeed:20
+})
+
+typewriter
+.pauseFor(1800)
+.changeDelay(20)
+.typeString('Moi c\'est Imane Elouazzani')
+.pauseFor(300)
+.typeString('<strong>, Developpeuse front-end</strong>')
+.pauseFor(1000)
+.deleteChars(9)
+.typeString('<span style="color: #27ae60"> CSS</span>')
+.pauseFor(1000)
+.deleteChars(4)
+.typeString('<span style="color: #EA39ff"> REACT</span>')
+.start()
