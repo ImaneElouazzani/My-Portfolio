@@ -39,3 +39,9 @@ typewriter
 .deleteChars(4)
 .typeString('<span style="color: #EA39ff"> REACT</span>')
 .start()
+
+// Animation Contact
+
+const input_fields = document.querySelectorAll('input')
+
+for(let i = 0; )
